@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+/* font-family: 'Barlow Semi Condensed', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    display: grid;
+    place-items: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+
+}
+
+img {
+    border-radius: 50%;
+    border: solid 2px hsl(0, 0%, 100%);
+    height: 2rem;
+    margin: 1rem 0 0 1.8rem;
+    /* flex-wrap: 1px; */
+}
+
+.top {
+    display: flex;
+    color: hsl(0, 0%, 100%);
+
+
+}
+
+.name {
+    padding: 1rem 0rem 0rem 0.5rem;
+}
+
+.name p:nth-child(2) {
+    color: hsl(0, 0%, 100%);
+    opacity: 50%;
+}
+
+
+.danial {
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 40%;
+    width: 100%;
+
+    background-color: hsl(263, 55%, 52%);
+    background-position: top right;
+    border-radius: 8px;
+    font-weight: 600;
+
+}
+
+.danial h3 {
+    color: hsl(0, 0%, 100%);
+    padding: 1rem 2rem;
+
+}
+
+.danial q {
+    color: hsl(0, 0%, 100%);
+    opacity: 70%;
+    padding: 1rem 2rem;
+}
+
+.dan {
+    border: solid 2px hsl(263, 62%, 75%);
+}
+
+/* ------------------------------------------------- */
+.whittle {
+    width: 100%;
+
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.whittle h3 {
+    color: hsl(0, 0%, 0%);
+    padding: 0rem 2rem;
+
+}
+
+.whittle q {
+    color: hsl(0, 0%, 0%);
+    opacity: 70%;
+    padding: 0rem 2rem;
+}
+
+
+.whittle p:nth-child(2) {
+
+    color: hsl(0, 0%, 0%);
+    opacity: 50%;
+}
+
+
+
+
+.walter {
+
+    width: 100%;
+
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 8px;
+    font-weight: 600;
+
+}
+
+.walter h3 {
+    color: hsl(0, 0%, 100%);
+    padding: 0rem 2rem;
+}
+
+.walter q {
+    color: hsl(0, 0%, 100%);
+    opacity: 70%;
+    padding: 0rem 2rem;
+}
+
+/* ------------------- */
+
+
+
+
+.harmon {
+
+    width: 100%;
+
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    font-weight: 600;
+
+}
+
+.p-1 {
+    color: black;
+}
+
+.harmon h3 {
+    color: hsl(0, 0%, 0%);
+    padding: 0rem 2rem;
+
+}
+
+.harmon q {
+    color: hsl(0, 0%, 0%);
+    opacity: 70%;
+    padding: 0rem 2rem;
+}
+
+
+.harmon p:nth-child(2) {
+    padding-top: 3px;
+    color: hsl(0, 0%, 0%);
+    opacity: 50%;
+
+}
+
+/* ---------------------------- */
+
+.abrams {
+
+    width: auto;
+    height: fit-content;
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: left;
+}
+
+
+.abrams h3 {
+    color: hsl(0, 0%, 100%);
+    padding: 1rem 2rem;
+
+}
+
+.abrams q {
+    color: hsl(0, 0%, 100%);
+    opacity: 70%;
+    padding: 1rem 2rem;
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+main {
+    margin: 8vh 5vw 0 5vw;
+
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    grid-template-areas: "danial danial walter whittle"
+        "harmon abrams abrams whittle"
+
+
+}
+
+.danial {
+    display: grid;
+    grid-area: danial;
+
+}
+
+.harmon {
+    display: grid;
+    grid-area: harmon;
+    height: 100%;
+
+}
+
+.walter {
+    display: grid;
+    grid-area: walter;
+    height: 100%;
+}
+
+.whittle {
+    display: grid;
+    grid-area: whittle;
+    height: 100%;
+
+}
+
+.abrams {
+    display: grid;
+    grid-area: abrams;
+}
+
+/* ------------------------------------------------------------ */
+
+img:hover {
+    cursor: pointer;
+
+}
+
+.name p {
+    cursor: pointer;
+}
+
+
+
+
+/* ----------------------------------------------------------- */
+@media (max-width: 320px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        overflow-y: visible;
+    }
+
+    .danial {
+        background-position: top right;
+
+    }
+
+
+    .whittle q {
+        color: hsl(0, 0%, 0%);
+        opacity: 70%;
+        padding: 1rem 2rem;
+    }
+
+    .whittle h3 {
+        color: hsl(0, 0%, 0%);
+        padding: 1rem 2rem;
+
+    }
+
+    .harmon h3 {
+        color: hsl(0, 0%, 0%);
+        padding: 1rem 2rem;
+
+    }
+
+    .harmon q {
+        color: hsl(0, 0%, 0%);
+        opacity: 70%;
+        padding: 1rem 2rem;
+    }
+
+}
